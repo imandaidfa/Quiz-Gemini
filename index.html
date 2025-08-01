@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Google Gemini AI</title>
+    <!-- Tailwind CSS CDN untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div id="quiz-container" class="bg-white p-8 rounded-xl shadow-lg w-full max-w-2xl">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">Kuis Google Gemini AI</h1>
+
+        <div id="quiz-questions">
+            <!-- Pertanyaan kuis akan dirender di sini oleh JavaScript -->
+        </div>
+
+        <div id="results" class="hidden mt-6 text-center">
+            <h2 id="score-text" class="text-2xl font-semibold mb-4 text-gray-700"></h2>
+            <button id="restart-button" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Coba Lagi
+            </button>
+        </div>
+
+        <button id="submit-button" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 mt-6">
+            Kirim Jawaban
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
